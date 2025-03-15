@@ -1,0 +1,4 @@
+preload = ["./router.ts"]
+
+[serve.static]
+plugins = ["./router-plugin.ts"]

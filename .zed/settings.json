@@ -1,0 +1,74 @@
+// Folder-specific settings
+//
+// For a full list of overridable settings, and general information on folder-specific settings,
+// see the documentation: https://zed.dev/docs/configuring-zed#settings-files
+{
+  "formatter": "auto",
+  "show_completions_on_input": true,
+  "redact_private_values": true,
+  "show_whitespaces": "all",
+  "show_wrap_guides": true,
+  "show_user_picture": false,
+  "show_call_status_icon": true,
+  "always_treat_brackets_as_autoclosed": true,
+  "format_on_save": ["prettier"],
+  "terminal": {
+    "env": {},
+    "font_features": {},
+    "font_family": "JetBrains Mono"
+  },
+  "file_scan_exclusions": [".bunfig.toml", "bun.lockb"],
+  "base_keymap": "VSCode",
+  "node": {
+    "ignore_system_version": false
+  },
+  "search": {
+    "whole_word": false,
+    "regex": true,
+    "case_sensitive": true
+  },
+  "task": {
+    "show_status_indicator": true
+  },
+  "code_actions_on_format": {
+    "source.organizeImports": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+    "source.fixAll.markdownlint": true,
+    "source.fixAll.prettier": true
+  },
+  "assistant": {
+    "enabled": true,
+    "provider": {
+      "name": "anthropic",
+      "default_model": "claude-3-7-sonnet"
+    },
+    "dock": "left",
+    "button": true,
+    "version": "2"
+  },
+  "languages": {
+    "Python": {
+      "tab_size": 4,
+      "formatter": "auto",
+      "format_on_save": "on"
+    },
+    "JavaScript": {
+      "tab_size": 2,
+      "formatter": "auto",
+      "show_wrap_guides": true,
+      "show_whitespaces": "all"
+    },
+    "TypeScript": {
+      "enable_language_server": true,
+      "formatter": "prettier",
+      "prettier": {
+        "plugins": [
+          "prettier-plugin-toml",
+          "prettier-plugin-svelte",
+          "prettier-plugin-sql"
+        ]
+      }
+    }
+  }
+}
